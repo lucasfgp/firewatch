@@ -1,0 +1,40 @@
+{% extends "firedata/base.html" %}
+{% load static %}
+    {% block content %}
+
+        <div class ="container-fluid" id="api_swagger">
+        <br>
+        <ul>
+        <li><h4>GET http://127.0.0.1:8000/api/burningeventslist/ - return a list of all burning events in record</h4>
+        <a href="http://127.0.0.1:8000/api/burningeventslist/"><h4>http://127.0.0.1:8000/api/burningeventslist/ </h4></a></li>
+        <br>
+        <li><h4>GET http://127.0.0.1:8000/api/conservationunitlist/ - return a list of all burning events and all their respective conservation units data</h4>
+        <a href="http://127.0.0.1:8000/api/conservationunitlist/"><h4>http://127.0.0.1:8000/api/conservationunitlist/ </h4></a></li>
+        <br>
+        <li><h4>GET http://127.0.0.1:8000/api/regionalgrouplist/ - return a list of all Brazil regional groups</h4>
+        <a href="http://127.0.0.1:8000/api/regionalgrouplist/"><h4>http://127.0.0.1:8000/api/regionalgrouplist/ </h4></a></li>
+        <br>
+        <li><h4>GET http://127.0.0.1:8000/api/managementunitlist/ - return a list of all different management units on record</h4>
+        <a href="http://127.0.0.1:8000/api/managementunitlist/"><h4>http://127.0.0.1:8000/api/managementunitlist/ </h4></a></li>
+        <br>
+        <li><h4>POST http://127.0.0.1:8000/api/burningevents/create - add a new burning record</h4>
+        <a href="http://127.0.0.1:8000/api/burningevents/create"><h4>http://127.0.0.1:8000/api/burningevents/create </h4></a></li>
+        <br>
+        <li><h4>POST http://127.0.0.1:8000/api/conservationunit/create - add a new conservation unit record</h4>
+        <a href="http://127.0.0.1:8000/api/conservationunit/create"><h4>http://127.0.0.1:8000/api/conservationunit/create </h4></a></li>
+        <br>
+        <li><h4>POST http://127.0.0.1:8000/api/managementunit/create - add a new management unit record</h4>
+        <a href="http://127.0.0.1:8000/api/managementunit/create"><h4>http://127.0.0.1:8000/api/managementunit/create </h4></a></li>
+        <br>
+        <li><h4>GET, PUT, DELETE http://127.0.0.1:8000/api/burningevents/3 - retrieves, updates and delete the burning event record (id=3)</h4>
+        <a href="http://127.0.0.1:8000/api/burningevents/3"><h4>http://127.0.0.1:8000/api/burningevents/3 </h4></a></li>
+        <br>
+        <li><h4>GET, PUT, DELETE http://127.0.0.1:8000/api/conservationunit/8 - retrieves, updates and delete the conservation unit record (id=8)</h4>
+        <a href="http://127.0.0.1:8000/api/conservationunit/8"><h4>http://127.0.0.1:8000/api/conservationunit/8</h4></a></li>
+        
+        <li><h4>GET, PUT, DELETE http://127.0.0.1:8000/api/managementunit/20 - updates the management unit record (id=20)</h4>
+        <a href="http://127.0.0.1:8000/api/managementunit/20"><h4>http://127.0.0.1:8000/api/managementunit/20</h4></a></li>
+
+        </ul>
+    </div>
+{% endblock %}

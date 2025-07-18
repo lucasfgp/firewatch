@@ -1,0 +1,82 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-image: linear-gradient(#00bf63, rgb(12, 12, 12));
+    height: 2px;
+}
+
+.navbar {
+    padding: 0px;
+    background-image: linear-gradient(#3e414c, rgb(12, 12, 12));
+}
+
+.nav_link {
+    color: black;
+}
+
+.content {
+    padding-left: 10px;
+    float:left;
+}
+
+h1 {
+    color:#ffbd59;
+}
+
+h2 {
+    color:#107c48;
+    display: flex;
+    justify-content: center;
+}
+
+/* .glossary_title {
+    background-image:-o-linear-gradient();
+    display: inline;
+} */
+
+#application-title {
+    display: inline;
+    vertical-align: middle;
+}
+
+#logo
+{
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+}
+
+#header {
+    vertical-align: middle;
+    width: 100%;
+    background-color: #3caea3;
+}
+
+#navigation {
+    width: 100%;
+    background-color: #00bf63;
+    color: #ffffff;
+    padding: 2px;
+}
+
+#gene_list {
+    padding-left: 10px;
+    padding-right: 20px;
+    float: left;
+    border-right: 2px dashed black;
+}
+
+#footer {
+    width: 100%;
+    padding-left: 10px;
+    float: left;
+}

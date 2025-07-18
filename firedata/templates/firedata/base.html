@@ -1,0 +1,70 @@
+{% include "./header.html" %}
+{% include "./title.html" %}
+
+<div class="container-fluid">
+    <div class="row">
+        {% block event_list %}
+            <div class="col-sm-4" id="glossary_list">
+                <h2>Python Version</h2>
+                <p style="text-align: center;">3.9.22</p>
+                <br>
+                <h2>Packages Versions</h2>
+                <br>
+                <ul>
+                    <li>asgiref==3.8.1</li>
+                    <li>attrs==25.3.0</li>
+                    <li>charset-normalizer==3.4.2</li>
+                    <li>Django==4.2.22</li>
+                    <li>django-bootstrap4==25.1</li>
+                    <li>djangorestframework==3.16.0</li>
+                    <li>djangorestframework_simplejwt==5.5.0</li>
+                    <li>factory_boy==3.3.3</li>
+                    <li>Faker==37.4.0</li>
+                    <li>idna==3.10</li>
+                    <li>inflection==0.5.1</li>
+                    <li>jsonschema==4.24.0</li>
+                    <li>jsonschema-specifications==2025.4.1</li>
+                    <li>numpy==2.0.2</li>
+                    <li>PyJWT==2.9.0</li>
+                    <li>python-dateutil==2.9.0.post0</li>
+                    <li>python-decouple==3.8</li>
+                    <li>pytz==2025.2</li>
+                    <li>PyYAML==6.0.2</li>
+                    <li>referencing==0.36.2</li>
+                    <li>requests==2.32.4</li>
+                    <li>rpds-py==0.25.1</li>
+                    <li>sqlparse==0.5.3</li>
+                    <li>typing_extensions==4.13.2</li>
+                    <li>tzdata==2025.2</li>
+                    <li>uritemplate==4.2.0</li>
+                    <li>urllib3==2.5.0</li>
+                    </li>
+                </ul>
+                <br>
+                <h2>Glossary</h2>
+                <br>
+                <h3>Burning Event</h3>
+                <p> A recorded occurrence of fire activity within a conservation unit, 
+                    which may include wildfires, controlled burns, firebreak maintenance, 
+                    or other fire-related interventions aimed at management, prevention, or response.</p>
+                <br>
+                <h3>Conservation Units</h3>
+                <p>Conservation Units (CUs) are natural areas protected by brazilian law. 
+                   These areas possess unique characteristics related to the local fauna and flora.</p>
+                <br>
+                <h3>Management Unit</h3>
+                <p>An administrative division responsible for overseeing 
+                    the protection, conservation, and sustainable use of natural areas 
+                    within a specific geographical boundary, including the coordination of 
+                    activities in one or more conservation units.</p>
+               
+            </div>
+        {% endblock %}
+
+        <div class="col-sm-8" class="content">
+            {% block content %}Did not render content{% endblock %}
+        </div>
+
+        {% include "./footer.html" %}
+    </div>
+</div>
