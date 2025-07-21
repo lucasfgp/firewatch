@@ -1,21 +1,14 @@
-Steps to make the application run
-
-cd /path_to_the_file
-
-python3.9 -m venv firewatchenv
-
-source firewatchenv/bin/activate
-
-workon firewatchenv
-
-cd firewatch
-
-pip install -r requirements.txt
-
-python scripts/populate_firewatch.py
-
-python manage.py makemigrations
-
-python manage.py migrate
-
-python manage.py runserver
+<h2>Firewatch App</h2>
+<hr>
+<h3>Description</h3>
+<p>This project aims to develop a Django-based web application for managing wildfire events in conservation units across Brazil. 
+  The application supports create, read, update, and delete (CRUD) 
+  functionalities for events and conservation units, and includes automated tests to ensure system stability. 
+  A RESTful API was implemented using Django REST Framework.</p>
+<hr>
+<h3>Functionalities</h3>
+<ul>
+  <li>Glossary</li>
+  <li>CRUD Requests</li>
+  <li>Validations</li>
+</ul>
